@@ -210,11 +210,14 @@ int main(){
 
                 int cpuChoice = (rand() % possibleMoves) + 1; 
                 
+                // player choice as ascii and text
                 printf("\n%s Chose: %s\n", name, games[gameChoice].moveList[choice-1]);
-                printf("Computer Chose: %s\n\n", games[gameChoice].moveList[cpuChoice-1]);
+                printf("\n\n %s \n\n", asciiArt[choice-1]);
 
+                // computer decision as ascii & text
+                printf("\n\nComputer Chose: %s\n\n", games[gameChoice].moveList[cpuChoice-1]);
+                printf("\n\n %s \n\n\n",  asciiArt[cpuChoice-1]);
 
-                printf("\n\n %s \n\n vs. \n\n %s \n\n", asciiArt[choice-1], asciiArt[cpuChoice-1]);
 
                 // use look up table for reference 
                 char res = games[gameChoice].combinationList[cpuChoice-1][choice-1];
