@@ -11,6 +11,13 @@ Simple project in C that can play two versions of Scissor Paper Rock:
 
 Furthermore, there is a text file `wins.txt` for keeping track of wins for the player and the computer...
 
+The top number is number of player/person wins.
+The bottom number is the number of wins for the computer.
+
+```
+8
+4
+```
 
 
 **Scissor Paper Rock Ascii Art**
